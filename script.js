@@ -1,31 +1,31 @@
-//complete this code
 class Rectangle {
-	constructor(width,height){
-      this._width=width,
-		  this._height=height;
-}
-	get width(){
-      return _width;
-}
-	get height(){
-   return _height;
-}
+  constructor(width, height) {
+    this._width = width;
+    this._height = height;
+  }
 
-	get area(){
-      return this._width * this._height;
-}
-	
+  get width() {
+    return this._width;   // ✅ fixed
+  }
+
+  get height() {
+    return this._height;  // ✅ fixed
+  }
+
+  getArea() {
+    return this._width * this._height;
+  }
 }
 
 class Square extends Rectangle {
-       constructor(side){
-		   super(side, side);
+  constructor(side) {
+    super(side, side);
     this._side = side;
-}
-	 getPerimeter() {
+  }
+
+  getPerimeter() {
     return this._side * 4;
   }
-	
 }
 
 // Do not change the code below this line
