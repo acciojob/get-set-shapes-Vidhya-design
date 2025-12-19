@@ -5,10 +5,10 @@ class Rectangle {
 		  this._height=height;
 }
 	get width(){
-      return width;
+      return _width;
 }
 	get height(){
-   return height;
+   return _height;
 }
 
 	get area(){
